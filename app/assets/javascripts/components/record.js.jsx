@@ -1,6 +1,7 @@
 var Record =  React.createClass({
   render: function(){
-    <tr>
+    return (
+      <tr>
         <td>
           {this.props.record.date}
         </td>
@@ -10,6 +11,7 @@ var Record =  React.createClass({
         <td>
           {amountFormat(this.props.record.amount)}
         </td>
-      </tr> 
+      </tr>
+    ) 
   }
 });

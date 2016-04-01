@@ -31,7 +31,7 @@ var Records = React.createClass({
           </thead>
           <tbody>
           {this.props.data.map(function(record,i){
-            return <Record key={record._id.$oid} record={record} />;
+            return <Record key={record['_id']['$oid']} record={record} />;
           })}
           </tbody>
         </table>
